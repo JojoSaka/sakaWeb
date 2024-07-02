@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(49, 48, 48);
+    color: white;
+}
+
+header {
+    margin: 20px;
+    text-align: center;
+}
+
+.profile h1 {
+    padding: 10px 0;
+}
+
+.profile {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name {
+    margin: 20px 0;
+    font-size: 24px;
+    padding: 30px 0;
+}
+
+h3 {
+    text-align: center;
+ }
+
+.country {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.dev {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.day {
+    font-size: 20px;
+}
+
+p {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.email {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.goals ul{
+    margin: 30px 0;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+.goals ul li{
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 500px){
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .image {
+        margin: 0 40px;
+    }
+}
