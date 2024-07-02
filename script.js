@@ -6,7 +6,8 @@ function updateDateTime() {
     const options = { weekday: 'long' };
     const day = new Intl.DateTimeFormat('en-US', options).format(now);
     
-    currentTimeUTC.textContent = now.toUTCString();
+    currentTimeUTC.textContent = now.toISOString().replace('T', ' ').replace('Z', ' UTC');
+    // currentTimeUTC.textContent = now.toUTCString();
     currentDay.textContent = day;
 }
 
